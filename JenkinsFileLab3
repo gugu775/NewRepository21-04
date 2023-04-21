@@ -5,11 +5,11 @@ pipeline {
             steps {
                 sh "ls"
             }
+        }
+        stage(‘Second Stage’){
+            steps {
+                sh “pwd”
+            }  
+        }
     }
-    stage(‘Second Stage’){
-        steps {
-            sh “pwd”
-        }  
-    }
- 
- 
+} 
